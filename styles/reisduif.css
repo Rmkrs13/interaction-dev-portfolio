@@ -1,0 +1,66 @@
+:root {
+    --background-color: #1b8d1b;
+    --text-color: #000;
+    --figure-text-color: #fff;
+    --footer-background-color: #FFFFFF;
+    --footer-text-color: #000000;
+    --figure-background-color: #006400;
+    --border-color: #FFFF00;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    background-image: url(../images/gras.svg);
+    background-size: cover;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--figure-background-color);
+    border: 1px solid var(--text-color);
+    color: var(--border-color);
+}
+
+button:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+#game-canvas {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#game-canvas canvas {
+    display: block;
+    margin: 0 auto;
+}

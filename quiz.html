@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Interaction Dev. Portfolio - Lars Raeymaekers</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen">
+            <h1>FC De Kampioenen Quiz</h1>
+            <p>Welkom bij de FC De Kampioenen quiz! Klik op de startknop om te beginnen.</p>
+            <button id="start-btn">Start</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+        <div id="quiz-screen" class="screen hidden">
+            <h2 id="question"></h2>
+            <p id="spoken-text"></p>
+            <div id="info">
+                <p>Vraag <span id="question-number"></span> van <span id="total-questions"></span></p>
+                <p>Score: <span id="current-score"></span></p>
+            </div>
+            <button id="skip-btn">Opnieuw afspelen</button>
+        </div>
+        <div id="end-screen" class="screen hidden">
+            <h1>Quiz Voltooid!</h1>
+            <p>Je eindscore is: <span id="score"></span></p>
+            <p>Juiste antwoorden: <span id="correct-answers"></span></p>
+            <p>Foute antwoorden: <span id="incorrect-answers"></span></p>
+            <p>Juiste antwoorden na opnieuw proberen: <span id="retry-correct-answers"></span></p>
+            <button id="restart-btn">Opnieuw</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+    </div>
+    <script src="./scripts/quiz.js"></script>
+</body>
+</html>

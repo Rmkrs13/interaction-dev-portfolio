@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vraag het aan Maurice - Interaction Dev. Portfolio - Lars Raeymaekers</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/maurice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="start-screen" class="screen">
+            <h1>Vraag het aan Maurice</h1>
+            <p>Weet je niet wat iets is? Vraag het aan Maurice! Trek een foto van een object en Maurice zal zeggen wat het is.</p>
+            <button id="start-btn">Neem een foto</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+        <div id="camera-screen" class="screen hidden">
+            <div id="video-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="canvas" class="hidden"></canvas>
+            </div>
+            <button id="capture-btn">Vraag het aan Maurice</button>
+            <button id="retry-btn">Opnieuw</button>
+        </div>
+        <div id="result-screen" class="screen hidden">
+            <h1>Ik zeg altijd dat dit een <span id="object-name"></span> is!</h1>
+            <img id="captured-image" src="" alt="Gevangen beeld">
+            <button id="new-object-btn">Nieuw object herkennen</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+    </div>
+    <script src="./scripts/ml5.min.js"></script>
+    <script src="./scripts/webcam-easy.min.js"></script>
+    <script src="./scripts/maurice.js"></script>
+</body>
+</html>

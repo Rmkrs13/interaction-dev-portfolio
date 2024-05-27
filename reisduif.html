@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisduif - Interaction Dev. Portfolio - Lars Raeymaekers</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reisduif.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen">
+            <h1>Reisduif</h1>
+            <p>Gebruik je hoofd om de duif door het parcours te leiden. Vermijd obstakels en verzamel punten.</p>
+            <button id="start-btn">Start</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+        <div id="game-screen" class="screen hidden">
+            <div id="game-canvas"></div>
+            <p>Score: <span id="current-score">0</span></p>
+        </div>
+        <div id="end-screen" class="screen hidden">
+            <h1>Game Over!</h1>
+            <p>Je score: <span id="score"></span></p>
+            <p>Highscore: <span id="highscore"></span></p>
+            <button id="restart-btn">Opnieuw</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+    </div>
+    <script src="./scripts/p5.min.js"></script>
+    <script src="./scripts/ml5.min.js"></script>
+    <script src="./scripts/reisduif.js"></script>
+</body>
+</html>

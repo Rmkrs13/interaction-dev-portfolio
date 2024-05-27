@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagschotel - Interaction Dev. Portfolio - Lars Raeymaekers</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/dagschotel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="start-screen" class="screen">
+            <h1>Dagschotel</h1>
+            <p>Beweeg je smartphone om Xavier te bewegen. Vang zoveel mogelijk bierglazen en vermijd de chocomelkglaasjes. Tik op de knop om te beginnen!</p>
+            <button id="start-btn">Start Spel</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+        <div id="game-screen" class="screen hidden">
+            <div id="canvas-container"></div>
+            <div id="score">Score: 0</div>
+        </div>
+        <div id="end-screen" class="screen hidden">
+            <h1>Game Over!</h1>
+            <p>Je score: <span id="final-score"></span>.</p>
+            <p>Highscore: <span id="high-score"></span></p>
+            <button id="restart-btn">Opnieuw Spelen</button>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+        <div id="no-gyro-screen" class="screen hidden">
+            <h1>Gyroscoop niet ondersteund</h1>
+            <p>Deze game werkt alleen op apparaten met een gyroscoop.</p>
+            <button onclick="window.location.href='index.html'">Terug naar de Homepage</button>
+        </div>
+    </div>
+    <script src="./scripts/p5.min.js"></script>
+    <script src="./scripts/dagschotel.js"></script>
+</body>
+</html>
