@@ -60,6 +60,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    height: 50%;
 }
 
 #webcam, #canvas {
