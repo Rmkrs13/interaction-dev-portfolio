@@ -68,7 +68,6 @@ button:hover {
     height: 50%;
     max-width: 640px;
     border-radius: 10px;
-    object-fit: contain;
 }
 
 canvas {
