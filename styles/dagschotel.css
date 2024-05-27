@@ -57,7 +57,7 @@ button:hover {
 #game-screen {
     position: relative;
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 300px);
     margin-bottom: 20px;
 }
 
